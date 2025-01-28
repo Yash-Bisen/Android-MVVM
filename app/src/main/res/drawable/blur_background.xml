@@ -1,0 +1,12 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#80C1C3C7"/>
+    <corners android:radius="20dp"/>
+
+    <!-- Add a blur effect -->
+    <bitmap
+        android:src="@drawable/loginbackground"
+    android:alpha="0.5"
+    android:gravity="center"
+    android:filter="true"
+        />
+</shape>

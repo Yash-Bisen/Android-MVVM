@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">RetrofitApp</string>
+    <string name="home">Home</string>
+    <string name="users">Users</string>
+    <string name="favourites">Favourites</string>
+    <string name="profile">Profile</string>
+    <string name="register">Register</string>
+    <string name="registeration">Registeration</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="email">Email</string>
+    <string name="enter_your_email">Enter your Email</string>
+    <string name="enter_your_mobile_no">Enter your Mobile No</string>
+    <string name="mobile_no">Mobile No</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="enter_your_password">Enter your Password</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="log_in">Log In</string>
+    <string name="list_of_all_users">List of All Users</string>
+    <string name="remove">"delete "</string>
+    <string name="edit_user">edit user</string>
+    <string name="unfavourite">unfavourite</string>
+    <string name="remove_all_users">remove all users</string>
+    <string name="logout">log-out</string>
+    <string name="unfavoourite_all">Unfavourite All</string>
+    <string name="list_of_favourite_users">Favourite users</string>
+    <string name="save_profile">"Save "</string>
+    <string name="user_profile">User Profile</string>
+    <string name="update_user">Update</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="or">...............OR...............</string>
+    <string name="tag">Tag</string>
+    <string name="login">Login</string>
+    <string name="update">Update</string>
+    <string name="user_name">User Name*</string>
+    <string name="mobile_nos">Mobile No*</string>
+    <string name="no_favourite_user_found">No Favourite User Found</string>
+    <string name="add_profile_image">Add profile Image</string>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="clientId" >257019573745-ei5c209h7eca2nc2nnvgqj6fr9ml0thl.apps.googleusercontent.com</string>
+</resources>

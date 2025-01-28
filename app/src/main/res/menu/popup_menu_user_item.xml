@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/removeUser"
+        android:title="@string/remove"/>
+
+    <item
+        android:id="@+id/editUser"
+        android:title="@string/edit_user"
+        />
+
+    <item
+        android:id="@+id/unFavourite"
+        android:title="@string/unfavourite"
+        android:visible="false"
+        />
+
+</menu>

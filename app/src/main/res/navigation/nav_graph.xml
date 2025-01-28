@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/usersListFragment">
+
+<!--    <fragment-->
+<!--        android:id="@+id/favouriteUserFragment"-->
+<!--        android:name="com.example.retrofitapp.presentation.views.fragments.FavouriteUserFragment"-->
+<!--        android:label="FavouriteUserFragment" >-->
+<!--        <action-->
+<!--            android:id="@+id/action_favouriteUserFragment_to_updateUserFragment"-->
+<!--            app:destination="@id/updateUserFragment" />-->
+<!--    </fragment>-->
+<!--    <fragment-->
+<!--        android:id="@+id/profileFragment"-->
+<!--        android:name="com.example.retrofitapp.presentation.views.fragments.FavouriteUserFragment"-->
+<!--        android:label="ProfileFragment" />-->
+<!--    <fragment-->
+<!--        android:id="@+id/loginFragment"-->
+<!--        android:name="com.example.retrofitapp.presentation.views.fragments.FavouriteUserFragment"-->
+<!--        android:label="LoginFragment" >-->
+<!--        <action-->
+<!--            android:id="@+id/action_loginFragment_to_registrationFragment"-->
+<!--            app:destination="@id/registrationFragment" />-->
+<!--        <action-->
+<!--            android:id="@+id/action_loginFragment_to_usersListFragment"-->
+<!--            app:destination="@id/usersListFragment" />-->
+<!--    </fragment>-->
+<!--    <fragment-->
+<!--        android:id="@+id/registrationFragment"-->
+<!--        android:name="com.example.retrofitapp.presentation.views.fragments.RegistrationFragment"-->
+<!--        android:label="RegistrationFragment" >-->
+<!--        <action-->
+<!--            android:id="@+id/action_registrationFragment_to_loginFragment"-->
+<!--            app:destination="@id/loginFragment" />-->
+<!--    </fragment>-->
+<!--    <fragment-->
+<!--        android:id="@+id/updateUserFragment"-->
+<!--        android:name="com.example.retrofitapp.presentation.views.fragments.UpdateUserFragment"-->
+<!--        android:label="UpdateUserFragment" />-->
+<!--    <fragment-->
+<!--        android:id="@+id/usersListFragment"-->
+<!--        android:name="com.example.retrofitapp.presentation.views.fragments.UsersListFragment"-->
+<!--        android:label="UsersListFragment" >-->
+<!--        <action-->
+<!--            android:id="@+id/action_usersListFragment_to_loginFragment"-->
+<!--            app:destination="@id/loginFragment" />-->
+<!--        <action-->
+<!--            android:id="@+id/action_usersListFragment_to_updateUserFragment"-->
+<!--            app:destination="@id/updateUserFragment" />-->
+<!--    </fragment>-->
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.retrofitapp.presentation.views.fragments.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_usersListFragment"
+            app:destination="@id/usersListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.example.retrofitapp.presentation.views.fragments.RegistrationFragment"
+        android:label="RegistrationFragment" >
+        <action
+            android:id="@+id/action_registrationFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateUserFragment"
+        android:name="com.example.retrofitapp.presentation.views.fragments.UpdateUserFragment"
+        android:label="UpdateUserFragment" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.retrofitapp.presentation.views.fragments.ProfileFragment"
+        android:label="ProfileFragment" >
+        <action
+            android:id="@+id/action_profileFragment_to_practiceFragment"
+            app:destination="@id/practiceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/usersListFragment"
+        android:name="com.example.retrofitapp.presentation.views.fragments.UsersListFragment"
+        android:label="UsersListFragment" >
+        <action
+            android:id="@+id/action_usersListFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_usersListFragment_to_updateUserFragment"
+            app:destination="@id/updateUserFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favouriteUserFragment"
+        android:name="com.example.retrofitapp.presentation.views.fragments.FavouriteUserFragment"
+        android:label="FavouriteUserFragment" >
+        <action
+            android:id="@+id/action_favouriteUserFragment_to_updateUserFragment"
+            app:destination="@id/updateUserFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/practiceFragment"
+        android:name="com.example.retrofitapp.presentation.views.fragments.PracticeFragment"
+        android:label="PracticeFragment" />
+</navigation>

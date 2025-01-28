@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   xmlns:tools="http://schemas.android.com/tools">
+
+
+<ScrollView android:id="@+id/registrationPageFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+   >
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/loginbackground"
+        >
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:background="#411900"
+            android:minHeight="?attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_back_arrow"
+            app:title="Registration"
+            app:titleTextColor="@android:color/white" />
+
+        <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/toolbar" android:backgroundTint="@android:color/transparent"
+        android:shadowColor="@android:color/background_dark"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:id="@+id/layoutContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blur_background"
+            android:filterTouchesWhenObscured="true"
+            android:layerType="software">
+
+            <TextView
+                android:id="@+id/registrationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="0dp"
+                android:text="@string/register"
+                android:textColor="#411900"
+                android:textSize="32sp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="90dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/registrationText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/profile" />
+
+            <!-- Add remaining fields similarly -->
+
+
+            <com.taskeasy.design.EditTextInputLayout
+                android:id="@+id/editNameText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:imeOptions="actionDone"
+                android:maxWidth="220dp"
+                app:iconStart="@drawable/ic_edit"
+                app:inputHint="Name"
+                app:labelText="Name"
+                tools:ignore="HardcodedText" />
+
+            <com.taskeasy.design.EditTextInputLayout
+                android:id="@+id/editMobileNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:maxWidth="220dp"
+                android:layout_marginTop="12dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/editNameText"
+                android:inputType="textEmailAddress"
+                app:iconStart="@drawable/ic_phone"
+                app:inputHint="Mobile No"
+                app:labelText="Mobile No"
+                tools:ignore="HardcodedText" />
+
+            <com.taskeasy.design.EditTextInputLayout
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:maxWidth="220dp"
+                android:layout_marginTop="12dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/editMobileNo"
+                android:inputType="textEmailAddress"
+                app:iconStart="@drawable/ic_mail"
+                app:inputHint="Email"
+                app:labelText="Email"
+                tools:ignore="HardcodedText" />
+
+            <com.taskeasy.design.EditTextInputLayout
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxWidth="220dp"
+                android:layout_marginTop="12dp"
+                android:layout_centerHorizontal="true"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                app:iconStart="@drawable/ic_lock"
+                app:inputHint="Password"
+                app:inputText="Password"
+                app:isPasswordTransformation="true"
+                app:labelText="Password"
+                android:layout_below="@id/editTextEmail"
+                tools:ignore="HardcodedText" />
+
+
+            <com.taskeasy.design.EditTextInputLayout
+                android:id="@+id/editTextConfPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxWidth="220dp"
+                android:layout_marginTop="12dp"
+                android:layout_centerHorizontal="true"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                app:iconStart="@drawable/ic_lock"
+                app:inputHint="Password"
+                app:inputText="Password"
+                app:isPasswordTransformation="true"
+                app:labelText="Password"
+                android:layout_below="@id/editTextPassword"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/registerButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextConfPassword"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:minWidth="130dp"
+                android:padding="10dp"
+                android:backgroundTint="#411900"
+                android:textColor="#C0B1B1"
+                android:text="@string/register"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</ScrollView>
+</layout>
